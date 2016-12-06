@@ -5,6 +5,7 @@
 3. Scan rest of article to ensure article adds **value** to your potential approach.
 4. Isolate and extract **key themes or approaches** related to your research area.
 5. Review material referenced in article for leads on other relevant articles.
+6. Use **Summary Format** and upload as markdown file to this repository, with a filename in the format of [Year] - [Author] - [Title of Article].
 
 ### Summary Format
 
