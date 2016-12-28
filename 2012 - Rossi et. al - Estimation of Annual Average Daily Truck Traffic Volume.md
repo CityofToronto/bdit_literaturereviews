@@ -39,12 +39,26 @@ AADTs are currently estimated by the FHWA using the following four-step methodol
 
 3. Calculate measures of uncertainty associated with this assignment.
   - N(m): measure of non-specificity (i.e. with how much certainty can this SPTC be said to belong to this road group?)
-  - D(m): measure of conflict (i.e. 
+  - D(m): measure of conflict (i.e. one time period indicates one road group, while another time period indicates a different road group)
 
 4. Estimated AADT using seasonal adjustment factors weighted by assignment to road groups.
 
+##### Case Study
+
+- Study used 2005 data from 50 ATRs in Venice to establish road groups. 
+- Same dataset was sampled to form SPTCs of varying duration (24 - 72 hrs) and then used to estimate AADTs. 
+- Used 70% training / 30% test dataset.
+- 18 seasonality factors: 3 day-types (Weekdays, Saturdays, Sundays) and 6 month-types (Jan-Feb, Mar-Apr, etc.)
+- Algorithm tested different values of C (2 to 20) and evaluated them using the Dunn Index, Silhouette Measure, Pseudo F Statistic, and G2 Index: resulted in C = 5.
+
 #### Findings
-Summarize conclusions/findings of article succinctly, focusing on outcomes relevant to your own research.
+- Look into details of "fuzzy" clustering for time-of-day approach.
+- Validation approach used in this study may be useful, even at more granular level.
+- Need to take a closer look into how artificial neural networks (ANN) may be useful for assignment of new road segments to existing road groups.
 
 #### References of Interest
-List other papers referenced in this article that may potentially be of interest to you.
+* FHWA. (2001). Traffic Monitoring Guide. U.S. Department of Transportation.
+* Tsapakis, I., Schneider, W., Bolbol, A., & Skarlatidou, A. (2011). Discriminant Analysis for Assigning Short-Term Counts to Seasonal Adjustment Factor Groupings. Transportation Research Record, 2256, 112-119.
+* Li, M.-T., Zhao, F., & Chow, L. (2006). Assignment of Seasonal Factor Categories to Urban Coverage Count Stations Using a Fuzzy Decision Tree. Journal of Transportation Engineering, 132(8), 654-662.
+* Gulati, B. (1995). Precision of AADT Estimates from Short Period Traffic Counts. M.S. thesis, University of Regina. Saskatchewan, Canada.
+
